@@ -1,0 +1,299 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor-primaria:#ED4D1B;
+    --cor-secundaria:#FF9A3C;
+    --cor-preta: black;
+    --cor-branca:white;
+}
+
+body{
+    background: linear-gradient(90deg, #FFE7D1 0%, #FFF2E6 100%);
+    padding: 0 1rem;
+}
+
+header img{
+    display: block;
+    margin: 1rem auto;
+}
+
+header nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+header, .hero-section, .cursos-section{
+    border-color: var(--cor-preta);
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+    padding: 1.25rem;
+}
+
+.hero-section .button{
+    position: relative;
+}
+
+
+
+.decaration{
+    display: block;
+    position: relative;
+}
+
+
+.hero-section{
+    padding-right: 0 ;
+    padding-bottom: 16rem;
+}
+.hero-section img{
+    display: block;
+    margin: 1.25rem 0 0 auto;
+    max-width: 100%;
+}
+
+.hero-section p{
+    font-size: 1.25rem;
+    padding-right:1.25rem; ;
+}
+h1{
+    font-size: 3rem;
+    line-height: 105%;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+nav a{
+    color: var(--cor-preta);
+    font-size: 1.25rem;
+    padding: .5rem;
+    text-decoration: none;
+}
+
+.button{
+    background-color: var(--cor-primaria);
+    border: 2px solid var(--cor-preta);
+    box-shadow: 4px 4px 0 var(--cor-preta);
+    color: var(--cor-preta);
+    display: block;
+    font-size: 1.25rem;
+    padding: .75rem 1rem;
+    max-width: 14rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.text-direita{
+    text-align: right;
+}
+
+.cursos-section{
+    padding-bottom: 8rem;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.25rem;
+    margin-top: -8rem;
+    margin-bottom: 4rem;
+    margin-right: 1rem;
+}
+
+
+
+
+.card{
+    background-color:var(--cor-primaria) ;
+    border: 2px solid var(--cor-preta);
+    box-shadow: 4px 4px 0 var(--cor-preta);
+    max-width: 20rem;
+    padding: .5rem  ;
+    height: auto;
+}
+
+.card strong{
+    display: block;
+    font: 1.5rem;
+    margin: 1rem 0;
+}
+.card a{
+    display: block;
+    margin: 3rem 0 0 auto;
+    width: fit-content;
+}
+
+.card-pares{
+    align-self: end;
+    background-color: var(--cor-secundaria);
+}
+
+/* Footer */
+
+footer{
+    border-color: var(--cor-preta);
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+    padding: 1.25rem;
+    display: block;
+}
+
+footer nav a{
+    text-align: center;
+    display:block ;
+    padding-left: 0;
+}
+footer div{
+    display:block ;
+    padding-left: 0;
+}
+
+
+form label{
+    display: block;
+    font-size: 1.5rem;
+}
+
+form input{
+    border: 2px solid var(--cor-preta);
+    box-shadow: 4px 4px 0 var(--cor-preta);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    width: 99%;
+
+}
+
+
+
+.mt-1{
+    margin-top: 1rem;
+}
+
+.mt-2{
+    margin-top: 2rem;
+}
+
+.mb-1{
+    margin-bottom: 1rem,;
+}
+.mb-2{
+    margin-bottom: 2rem,;
+}
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-primario{
+    color: var(--cor-primaria)
+}
+
+.text-center{
+    text-align: center;
+}
+
+.mx-comece{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-final{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen  and (min-width: 40rem){
+
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    header nav{
+        display: block;
+        text-align: center;
+    }
+
+
+    .cards{
+        flex-direction: row;
+        justify-content: center;
+        display: flex;
+    }
+
+    .card-pares{
+        margin-top: 1rem;
+    }
+}
+
+@media screen  and (min-width: 48rem){
+    header div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    
+}
+
+@media screen  and (min-width: 72rem){
+    h1{
+        font-size: 4rem;
+    }
+
+    header nav a{
+        font-size: 2rem;
+    }
+ 
+
+    .btn-01{
+        padding-top: 17px;
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 72rem;
+
+    }
+
+    .container.row-reverse{
+        flex-direction: row-reverse;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 25% 25% 50%;
+
+        border-color: var(--cor-preta);
+        border-style: solid;
+        border-width: 0 1px 1px 1px;
+        padding: 10rem 1.25rem  1.25rem 1.25rem;
+
+    }
+
+    footer div p{
+        font-size: 1.25rem;
+        max-width: 16rem;
+        margin-left: 1.25rem;
+    }
+
+    .mx-comece{
+        margin: 1.5rem 0 0 0 ;
+    }
+
+    .btn-final{
+        margin: 1.5rem 0 0 0 ;
+
+    }
+    
+}
